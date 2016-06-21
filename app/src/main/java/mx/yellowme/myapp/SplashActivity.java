@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if(app.isLoginStart()){
-
+                    Util.sendAndFinish(SplashActivity.this, MainActivity.class);
                 }else{
                     Util.sendAndFinish(SplashActivity.this, LoginActivity.class);
                 }
